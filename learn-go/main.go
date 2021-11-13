@@ -42,6 +42,16 @@ func canIDrink(age int) bool {
 	return false
 }
 
+func canIDrinkSwitch(age int) bool {
+	switch koreanAge := age + 2; koreanAge {
+	case 10:
+		return false
+	case 20:
+		return true
+	}
+	return false
+}
+
 func main() {
 
 	fmt.Println("Hello World!")
@@ -67,4 +77,5 @@ func main() {
 	fmt.Println(result)
 
 	fmt.Println(canIDrink(16))
+	fmt.Println(canIDrinkSwitch(18))
 }
