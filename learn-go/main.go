@@ -15,6 +15,10 @@ func lenAndUpper(name string) (int, string) {
 	return len(name), strings.ToUpper(name)
 }
 
+func repeatMe(words ...string) {
+	fmt.Println(words)
+}
+
 func main() {
 
 	fmt.Println("Hello World!")
@@ -30,4 +34,6 @@ func main() {
 
 	totalLength, upperName := lenAndUpper("Youngkwon")
 	fmt.Println(totalLength, upperName)
+
+	repeatMe("youngkwon", "kim", "jake", "alden")
 }
