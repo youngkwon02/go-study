@@ -26,6 +26,15 @@ func repeatMe(words ...string) {
 	fmt.Println(words)
 }
 
+func superAdd(numbers ...int) int {
+	total := 0
+	// for i:= 0; i < len(numbers); i++ { ... } is also possible
+	for _, number := range numbers {
+		total += number
+	}
+	return total
+}
+
 func main() {
 
 	fmt.Println("Hello World!")
@@ -46,4 +55,7 @@ func main() {
 	fmt.Println(totalLength, upperName)
 
 	repeatMe("youngkwon", "kim", "jake", "alden")
+
+	result := superAdd(1, 2, 3, 4, 5, 6)
+	fmt.Println(result)
 }
