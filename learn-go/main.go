@@ -12,6 +12,7 @@ func multiply(a, b int) int {
 
 // Return multiple result
 func lenAndUpper(name string) (int, string) {
+	defer fmt.Println("lenAndUpper is done..!")
 	return len(name), strings.ToUpper(name)
 }
 
