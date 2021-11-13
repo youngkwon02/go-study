@@ -52,6 +52,19 @@ func canIDrinkSwitch(age int) bool {
 	return false
 }
 
+func arrayAndSlice() {
+	// Array
+	names := [4]string{"youngkwon", "kim"}
+	names[2] = "Jake"
+	names[3] = "Alden"
+	fmt.Println("names", names)
+
+	// Slice
+	nameSlice := []string{"youngkwon", "kim"}
+	nameSlice = append(nameSlice, "Jake")
+	fmt.Println("nameSlice", nameSlice)
+}
+
 func main() {
 
 	fmt.Println("Hello World!")
@@ -78,4 +91,6 @@ func main() {
 
 	fmt.Println(canIDrink(16))
 	fmt.Println(canIDrinkSwitch(18))
+
+	arrayAndSlice()
 }
