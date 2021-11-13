@@ -65,6 +65,11 @@ func arrayAndSlice() {
 	fmt.Println("nameSlice", nameSlice)
 }
 
+func mapLikeObject() {
+	person := map[string]string{"name": "youngkwon", "address": "Seoul, Korea"}
+	fmt.Println(person)
+}
+
 func main() {
 
 	fmt.Println("Hello World!")
@@ -93,4 +98,5 @@ func main() {
 	fmt.Println(canIDrinkSwitch(18))
 
 	arrayAndSlice()
+	mapLikeObject()
 }
