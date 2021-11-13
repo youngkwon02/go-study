@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-func multiply(a int, b int) int {
+// Both a and b are int
+func multiply(a, b int) int {
 	return a * b
 }
 
@@ -18,4 +19,5 @@ func main() {
 	fmt.Println(age)
 
 	fmt.Println(multiply(2, 3))
+
 }
