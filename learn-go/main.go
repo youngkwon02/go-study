@@ -70,6 +70,20 @@ func mapLikeObject() {
 	fmt.Println(person)
 }
 
+type person struct {
+	name    string
+	age     int
+	favFood []string
+}
+
+func structPractice() {
+	favFood := []string{"Chicken,", "Pizza"}
+	youngkwon := person{name: "Youngkwon Kim", age: 25, favFood: favFood}
+	fmt.Println(youngkwon.name)
+	fmt.Println(youngkwon.age)
+	fmt.Println(youngkwon.favFood)
+}
+
 func main() {
 
 	fmt.Println("Hello World!")
@@ -99,4 +113,5 @@ func main() {
 
 	arrayAndSlice()
 	mapLikeObject()
+	structPractice()
 }
